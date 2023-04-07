@@ -19,6 +19,9 @@ int main()
     cout << "You enter: " << str << endl;
     cout << "Length of string in charr after input: " << strlen(charr) << endl;
     cout << "Length of string in charr after input: " << str.size() << endl;
+
+    cout << R"(Jim "king" Tutt uses "\n" instrad of endl.)" <<endl;
+    cout << R"+*("(fangtianjing wochiningmeng)")+*" <<endl;
     
     return 0;
 }
