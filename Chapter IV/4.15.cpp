@@ -10,5 +10,5 @@ int main()
     cout << "cups value = " << cups;
     cout << " and cups address = " << &cups << endl;
     return 0;
-
+    
 }
