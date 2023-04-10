@@ -17,4 +17,5 @@ int main()
     cout << sizeof(wages) << endl;
     cout << sizeof(pw) << endl;
     return 0;
+    
 }
