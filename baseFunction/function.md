@@ -7,3 +7,6 @@ string str1;
 string str2 = "panther";
 charr1 = charr2;                //无效输入
 str1 = str2;
+sizeof运用于数组名时，返回整个数组的长度
+sizeof计算指针名时,返回值与计算机的位数相关，32位返回4，64位返回8
+strlen计算字符串的长度不包含"\n"，但是sizeof计算整个字符串存储空间的长度，包含"\n";
