@@ -1,0 +1,47 @@
+1.char actor[30];
+short betsie[100];
+float chuck[13];
+long double dipsea[64];
+2.array<char, 30> actor;
+array<short, 100> betsie;
+array<float, 13> chuck;
+array<long double, 64> dipsea;
+3.int a[5] = {1, 3, 5, 7, 9};
+4.int even = a[0] + a[4];
+5.float ideas[10];
+cout << ideas[2] << endl;
+6.char num[] = "cheeseburger";
+7.string a = "Waldorf Salad";
+8.struct fish{
+    int lei;
+    float weight;
+    float length;  
+};
+9.fish fish1;
+10.enum Response{No, Yes, Maybe};
+11.double ted;
+int * pointer = & ted;
+cout << * pointer;
+12.float treacle[10];
+int * pointer = & treacle;
+cout << * pointer << * (pointer + 9);
+13.int num;
+cin >> num;
+int * pointer = new float [num];
+delete [] pointer;
+vector<float> pointer(num);
+14.有效，打印字符串存储的首地址；
+15.fish * pointer = new fish;
+cout << pointer->lei;
+16.替换后cin >> address遇到'\n'就会自动结束输入，导致输入不全；
+17.#include<iostream>
+#include<cstring>
+#include<vector>
+#include<array>
+int main()
+{
+    const int strr_num = {10};
+    const std::vector<std::string> ai[strr_num];
+    const std::array<std::string, strr_num> ai;
+    return 0;
+}
