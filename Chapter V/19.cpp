@@ -4,13 +4,12 @@ int main()
     using namespace std;
     char ch;
     int count = 0;
-    cout << "Enter characters; enter # to quit:\n";
-    cin.get(ch);
-    while(ch != '#')
+
+    while(ch = cin.get() != EOF)
     {
-        cout << ch;
-        ++ count;
-        cin.get(ch);
+        cout.put(char(ch));
+        ++count;
+
     }
     cout << endl << count << " characters read\n";
     return 0;
