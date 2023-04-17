@@ -1,0 +1,30 @@
+1.else if版本的效率更高，通过if、else if的方式，可以排除' '的格式；
+2.ch + 1为int 型，输出为数字、++ch仍然为char类型，输出字符；
+3.H$i$!$
+$S$e$n$d$ $ct1 = 9ct2 = 9;
+4.a. weight >= 115 && weight < 125;
+b. ch == 'q' || ch = 'Q';
+c. x % 2 == 0 && x != 26;
+d. x % 2 == 0 && x % 26 != 0;
+e. donation >1000 || donation < 2000 || guest = 1;
+f. islower(ch) || isupper(ch);
+5.当x为非零int型时，!!x与x不同，当x为bool型时，!!x与x相同；
+6.x > 0 ? x : -x;
+7.switch (ch)
+{
+    case 'A' : a_grade++;break;
+    case 'B' : b_grade++;break;
+    case 'C' : c_grade++;break;
+    case 'D' : d_grade++;break;
+    default : f_grade++;break;
+}
+8. 用整数作为标签，用户输入字符，程序不能处理字符，出现错误；标签用字符，用户输入整数，0-127的整数会被转为字符，会输出default的表达式；
+9. int line = 0;
+char ch;
+while(cin.get())
+{
+    if(ch != 'Q' && ch != '\n')
+    {
+        line++;
+    }
+}
