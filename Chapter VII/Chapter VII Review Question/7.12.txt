@@ -1,0 +1,75 @@
+1. 函数名，函数参数类型，返回值类型
+2. a.void igor()
+b. float tofu(int)
+c. double mpg(double, double)
+d. long summation(long ar[], int n)
+e. double doctor(const char ch)
+f. void ofcourse(boss pointer)
+g. string plot(map * pointer)
+3. int arr[];
+void sunlike(int arr[], int Arsize，int n)
+4. int arr[];
+void sunlike(int * p, int * pointer, int n)
+5. double sunlike(double arr[], int n)
+{
+    double temp = 0;
+    for(int i = 0; i < n - 1; i++)
+    {
+        if(arr[i] > arr[i + 1])
+        {
+            temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp; 
+        }
+    }
+    return temp;
+}
+6. 因为函数参数只在函数调用时有效，不会改变实参，因此没有必要使用const限定符
+7. char ghost[15] = "sunlike";
+char * pointer = "sunlike";
+用括号括起的字符串常量，表示地址；
+8. int replace(char * str, char c1, char c2)
+{
+    int count = 0;
+    while(*str != '\0')
+    {
+        if(* str == c1)
+        {
+            * str = c2;
+            count++
+        }
+        str++;
+    }
+    return count;
+}
+9. 指向常量字符串"pizza"的指针；常量字符taco数组；
+10. 在函数参数中定义结构体变量，进行值传递，定义结构体指针进行地址传递；值传递不改变原始结构体，地址传递改变原始结构体
+11. int (*pointer)(const char int);
+12. a. void show(applicant pt)
+{
+    cout << pt.name << endl;
+    for(int i = 0; i < 3; i++)
+    {
+        cout << pt.credit_rating[i] << endl;
+    }
+}
+b. void show(applicant * pointer)
+{
+    cout << pointer.name << endl;
+    for(int i = 0; i < 3; i++)
+    {
+        cout << pointer.credit_rating[i] << endl;
+    }
+}
+13. const char  *(* p2) (const applicant * a1, const applicant * a2);
+void (*p1) (applicant * a);
+void (*(*ap)[5])(applicant *);
+const double (*(pa)[10])(const applicant *, const applicant *); 
+(使用typedef完成：
+typedef void (*p1_type)(applicant));
+typedef const char * (*p2_type) (const applicant *, const applicant *);
+p1_type p1;
+p2_type p2;
+p1_type ap[5];
+p2_type ap[10];
+)
