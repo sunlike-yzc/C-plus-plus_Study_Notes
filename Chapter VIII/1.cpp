@@ -2,6 +2,7 @@
 inline double square (double x){
     return x * x;
 };
+
 int main()
 {
     using namespace std;
@@ -14,6 +15,6 @@ int main()
     cout << "c = " << c;
     cout << ", c squared = " << square(c ++) << "\n";
     cout << "Now c = " << c << "\n";
-    cout << "emm..." << endl;
+
     return 0; 
 }
