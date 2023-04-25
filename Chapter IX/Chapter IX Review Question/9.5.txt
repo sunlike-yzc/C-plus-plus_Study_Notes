@@ -1,0 +1,26 @@
+1. a.局部变量
+b.全局变量
+c.静态全局变量
+d.静态局部变量
+2.using声明是针对单个变量或者函数；using编译指令命名空间中的所有量添加到文件中；
+3.
+#include<iostream>
+int main()
+{
+    double x;
+    std::cout << "Enter value: ";
+    while(!(std::cin >> x))
+    {
+        std::cout << "Bad input. Please enter a number: ";
+        std::cin.clear();
+        while(std::cin.get() ！= '\0')
+        {
+            continue;
+        }
+    }
+    std::cout << "value = " << x << endl;
+    return 0;
+}
+4.using std::cout;
+using std::cin;
+5.
