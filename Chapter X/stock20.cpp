@@ -1,5 +1,5 @@
 #include<iostream>
-#include "stock10.h"
+#include "stock20.h"
 
 Stock::Stock() //默认构造函数
 {
@@ -79,7 +79,7 @@ void Stock::update(double price)
 
 }
 
-void Stock::show()
+void Stock::show() const
 {
     using std::cout;
     using std::ios_base;
@@ -95,4 +95,16 @@ void Stock::show()
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
 
+}
+
+const Stock & Stock::topval(const Stock & s) const
+{
+    if(s.total_val > total_val)
+    {
+        return s;
+    }
+    else
+    {
+        return *this;
+    }
 }
